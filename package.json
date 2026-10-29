@@ -44,12 +44,16 @@
     ],
     "win": {
       "target": [
-        "portable"
-      ],
-      "signAndEditExecutable": false
+        "nsis"
+      ]
     },
-    "portable": {
-      "artifactName": "setup.exe"
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "warningsAsErrors": false,
+      "artifactName": "ReaCut-Studio-Setup.exe"
     }
   }
 }

@@ -2,6 +2,8 @@ node_modules/
 dist-electron/
 dist/
 release/
+setup.exe
+*.exe
 .DS_Store
 Thumbs.db
 *.log
