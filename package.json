@@ -1,0 +1,35 @@
+{
+  "name": "reacut-studio",
+  "version": "1.0.0",
+  "description": "Professional Premiere Pro-Style Desktop Video Editor Powered by REA",
+  "main": "dist-electron/main.js",
+  "type": "module",
+  "homepage": "https://reacut.github.io/reacut-studio",
+  "scripts": {
+    "dev": "vite",
+    "build:web": "vite build --base=./",
+    "build:electron": "tsc -p tsconfig.electron.json && vite build",
+    "dev:electron": "vite",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "dist": "npm run build:electron && electron-builder"
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
+  }
+}
