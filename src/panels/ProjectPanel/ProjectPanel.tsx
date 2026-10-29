@@ -359,3 +359,4 @@ export const ProjectPanel: React.FC = () => {
     </div>
   );
 };
+

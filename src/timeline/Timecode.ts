@@ -80,3 +80,4 @@ export class Timecode {
     return this.framesToTimecode(this.secondsToFrames(seconds));
   }
 }
+

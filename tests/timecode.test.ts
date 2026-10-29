@@ -32,3 +32,4 @@ describe('Timecode calculations and conversions', () => {
     expect(tc30.framesToSeconds(75)).toBe(2.5);
   });
 });
+

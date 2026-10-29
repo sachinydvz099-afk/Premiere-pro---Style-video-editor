@@ -130,3 +130,4 @@ describe('Timeline Editing Commands & Undo/Redo Engine', () => {
     expect(rippledSeq.clips['clip_C'].timelineStartFrame).toBe(30);
   });
 });
+

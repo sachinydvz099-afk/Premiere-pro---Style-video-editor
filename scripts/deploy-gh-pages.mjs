@@ -14,3 +14,4 @@ fs.writeFileSync(path.join('dist', '.nojekyll'), '');
 console.log('✅ Created dist/.nojekyll');
 
 console.log('🎉 Web build completed in ./dist ready for GitHub Pages deployment.');
+

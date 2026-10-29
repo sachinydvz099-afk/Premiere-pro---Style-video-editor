@@ -156,3 +156,4 @@ This research document analyzes standard non-linear editing (NLE) application wo
 | **Export Media** | `Ctrl+M` | Implemented |
 | **Undo** | `Ctrl+Z` | Implemented |
 | **Redo** | `Ctrl+Y` / `Ctrl+Shift+Z`| Implemented |
+

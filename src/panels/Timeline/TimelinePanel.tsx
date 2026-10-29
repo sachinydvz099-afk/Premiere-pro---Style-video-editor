@@ -841,3 +841,4 @@ export const TimelinePanel: React.FC = () => {
     </div>
   );
 };
+

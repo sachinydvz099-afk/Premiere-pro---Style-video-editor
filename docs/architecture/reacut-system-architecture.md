@@ -117,3 +117,4 @@ $$\text{Total Seconds} = \frac{\text{Frames}}{\text{FPS}}$$
 Magnetic snapping calculates the Euclidean distance in frames between a dragging coordinate (clip start, clip end, or playhead) and all candidate boundaries:
 $$\Delta f = |f_{\text{target}} - f_{\text{candidate}}| \le \text{Threshold}$$
 When $\Delta f$ falls within the magnetic radius, the position snaps to the candidate boundary, guaranteeing zero-gap cuts.
+

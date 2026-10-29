@@ -35,3 +35,4 @@ The automated test suite and manual verification checklist confirm the standard 
 10. **Save and Reopen:** Serializes `.rcproj` file and verifies that loading restores identical timeline state, tracks, clips, and transforms.
 11. **Export Sequence:** Web export renders video chunks via Canvas and MediaRecorder; FFmpeg command compiles full native filtergraph.
 12. **Verification:** Rendered video timing and duration match the sequence frames exactly.
+

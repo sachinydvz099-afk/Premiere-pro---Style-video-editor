@@ -125,3 +125,4 @@ ReaCut Studio incorporates the findings and methodology of the **REA (Reverse En
 
 - ReaCut Studio is released under the **MIT License**.
 - FFmpeg is licensed under the LGPL v2.1+ / GPL v2+. See [ffmpeg.org](https://ffmpeg.org) for details.
+

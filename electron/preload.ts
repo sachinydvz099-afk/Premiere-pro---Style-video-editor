@@ -25,3 +25,4 @@ const api: ReacutDesktopApi = {
 };
 
 contextBridge.exposeInMainWorld('reacutApi', api);
+

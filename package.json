@@ -4,16 +4,16 @@
   "description": "Professional Premiere Pro-Style Desktop Video Editor Powered by REA",
   "main": "dist-electron/main.js",
   "type": "module",
-  "homepage": "https://reacut.github.io/reacut-studio",
+  "homepage": "https://sachinydvz099-afk.github.io/Premiere-pro---Style-video-editor/",
   "scripts": {
     "dev": "vite",
     "build:web": "vite build --base=./",
-    "build:electron": "tsc -p tsconfig.electron.json && vite build",
+    "build:electron": "tsc -p tsconfig.electron.json && vite build --base=./",
     "dev:electron": "vite",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
-    "dist": "npm run build:electron && electron-builder"
+    "dist": "npm run build:electron && electron-builder --win"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",
@@ -31,5 +31,25 @@
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
     "vitest": "^3.0.5"
+  },
+  "build": {
+    "appId": "com.reacut.studio",
+    "productName": "ReaCut Studio",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "setup.exe"
+    }
   }
 }

@@ -53,3 +53,4 @@ describe('Timeline Snapping & Magnetism', () => {
     expect(snapResult.snappedFrame).toBe(65);
   });
 });
+

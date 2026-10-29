@@ -60,3 +60,4 @@ In compliance with ethical and lawful reverse engineering rules:
 | **Timeline Operations** | Multitrack video (V1, V2...) & audio (A1, A2...); trimming, razor/split, ripple delete, snapping, track locking/muting. | Deterministic Command Pattern (`Execute`/`Undo`/`Redo`) for split, trim, move, ripple delete, snap-to-cut, track mute/solo/lock. |
 | **Preview Pipeline** | Real-time Mercury Playback Engine with canvas rendering, playback resolution scaling (Full, 1/2, 1/4). | Multi-element HTML5 Video + WebGL/Canvas composite renderer with variable playback resolution, transform matrix calculation, and Web Audio API routing. |
 | **Export Engine** | Adobe Media Encoder / FFmpeg filter graph integration. | Native FFmpeg spawn pipeline with filtergraph generation (`scale`, `overlay`, `eq`, `volume`, `concat`, etc.), real-time progress parsing, and job cancellation. |
+

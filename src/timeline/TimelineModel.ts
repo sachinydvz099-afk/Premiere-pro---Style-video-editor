@@ -190,3 +190,4 @@ export function createDefaultAudio(): AudioProperties {
     fadeOutFrames: 0
   };
 }
+

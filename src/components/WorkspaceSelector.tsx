@@ -66,3 +66,4 @@ export const WorkspaceSelector: React.FC = () => {
     </div>
   );
 };
+

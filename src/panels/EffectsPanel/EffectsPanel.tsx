@@ -205,3 +205,4 @@ export const EffectsPanel: React.FC = () => {
     </div>
   );
 };
+

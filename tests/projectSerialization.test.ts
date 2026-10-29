@@ -44,3 +44,4 @@ describe('Project Serialization & Validation (.rcproj format)', () => {
     expect(missing).toContain('asset_missing');
   });
 });
+

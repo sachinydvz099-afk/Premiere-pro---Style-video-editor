@@ -73,3 +73,4 @@ describe('FFmpeg Filter Graph Compiler', () => {
     expect(compiled.args).toContain('output.mp4');
   });
 });
+
