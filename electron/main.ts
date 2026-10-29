@@ -1,11 +1,16 @@
 import { app, BrowserWindow, ipcMain, dialog, Menu } from 'electron';
 import * as path from 'path';
+import * as fs from 'fs';
 import { spawn, ChildProcess } from 'child_process';
 
 let mainWindow: BrowserWindow | null = null;
 let activeFFmpegProcess: ChildProcess | null = null;
 
 function createWindow() {
+  const preloadPath = fs.existsSync(path.join(__dirname, 'preload.cjs'))
+    ? path.join(__dirname, 'preload.cjs')
+    : path.join(__dirname, 'preload.js');
+
   mainWindow = new BrowserWindow({
     width: 1440,
     height: 900,
@@ -14,7 +19,7 @@ function createWindow() {
     backgroundColor: '#121212',
     title: 'ReaCut Studio — Professional Video Editor',
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
+      preload: preloadPath,
       contextIsolation: true,
       nodeIntegration: false,
       sandbox: true,
@@ -194,4 +199,3 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
